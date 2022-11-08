@@ -1,0 +1,71 @@
+
+/* CSS variables */
+:root {
+  --primary-color: #4C4AE6;
+  font-size: 16px;
+}
+
+.footer {
+  font-style: italic;
+  /* background-color: rgb(80, 128, 25); */
+  text-align: center;
+  /*
+  Absolute 
+  font-size: 16px;
+  */
+  /* relatives: rem, em */
+  /* 1rem = 16px  */
+  font-size: 1.5rem; /* 32px?? */
+  /* 1. border */
+  /* border: 2px solid red; */
+  /* border-radius: 10px; */
+  /* 2. margin */
+  margin: 10px;
+  /* margin-left: 0;*/
+  /* margin: Top Right Bottom Left */
+  margin: 20px 10px 0 5px;
+  /* margin: Y (top/bottom) X (left/right) */
+  margin: 0 20px;
+  margin: 20px 0 0 0;
+  /* 3. paddings */
+  padding: 40px 0;
+  /* color: #FFFFFF; */
+}
+/*
+.navbar {
+  background-color: var(--primary-color);
+  color: #FFF;
+}
+.footer {
+  background-color: var(--primary-color);
+  color: #FFF;
+}
+*/
+.navbar, .footer {
+  background-color: var(--primary-color);
+  color: #FFF;
+}
+
+.navbar .link {
+  color: #FFF;
+  /* visibility: hidden; */
+  display: none;
+}
+
+nav.navbar img.logo {
+  width: 15%;
+  max-width: 80px;
+}
+
+.main-content {
+  background-color: goldenrod;
+  width: 100vw; /* viewport width */
+  height: 100vh; /* viewport height */
+}
+
+/*
+todos los elementos con class link sin underline
+*/
+.link {
+  text-decoration: none;
+}
