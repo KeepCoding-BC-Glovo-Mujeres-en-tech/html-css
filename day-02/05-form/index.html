@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 Form</title>
+</head>
+<body>
+  <h1>Keepcoding</h1>
+  <h2>Registro</h2>
+  <form action="registro-completado.html" method="post" novalidate>
+    <div>
+      <label for="name">nombre</label>
+      <input required id="name" name="name" type="text" placeholder="Añade tu nombre">
+    </div>
+    <div>
+      <label for="mail">email</label>
+      <input required id="mail" name="email" type="email">
+    </div>
+    <div>
+      <label for="password">password</label>
+      <input required id="password" name="password" type="password">
+    </div>
+    <div>
+      <label for="age">Age</label>
+      <input
+        type="number"
+        id="age"
+        min="18"
+        max="999"
+        name="age"
+        value="19"
+      >
+    </div>
+    <div>
+      <label for="phone">phone</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]+">
+    </div>
+    <label for="bio">Bio</label>
+    <textarea required id="bio"></textarea>
+    <fieldset>
+      <legend>Fav programming lang</legend>
+      
+      <label for="js">Javascript</label>
+      <input required id="js" type="radio" name="favLang" value="js">
+
+      <label for="python">Python 🐍</label>
+      <input required id="python" type="radio" name="favLang" value="python">
+      
+      <label for="net">.NET</label>
+      <input  required id="net" type="radio" name="favLang" value="net">
+    </fieldset>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
