@@ -112,9 +112,54 @@ todos los elementos con class link sin underline
 }
 
 @media screen and (min-width: 992px) {
+  .navbar .menu .link {
+    transition: color 0.3s linear;
+  }
   .navbar .menu .link:hover {
     color: red;
   }
+}
+
+@keyframes prueba {
+  from {
+    background-color: yellow;
+    opacity: 0;
+    width: 20%;
+  }
+  to {
+    background-color: blue;
+    opacity: 1;
+    width: 100%;
+  }
+}
+@keyframes example {
+  0% {
+    background-color: yellow;
+    opacity: 0;
+    width: 20%;
+  }
+  20% {
+    opacity: 1;
+    width: 70%;
+  }
+  70% {
+    opacity: 0;
+    width: 20%;
+  }
+  100% {
+    background-color: blue;
+    opacity: 1;
+    width: 100%;
+  }
+}
+.container {
+  animation: example 10s;
+}
+
+.navbar {
+  position: absolute;
+  top: 800px;
+  right: 0;
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
