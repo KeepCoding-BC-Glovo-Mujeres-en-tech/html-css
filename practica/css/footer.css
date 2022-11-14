@@ -1,0 +1,30 @@
+/* footer */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.rrss {
+  width: 60%;
+  max-width: 220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .link svg {
+  max-width: 30px;
+}
+
+.footer svg {
+  width: 100%;
+  transition: fill .3s linear;
+}
+
+@media screen and (min-width: 768px) {
+  .footer svg:hover {
+    fill: var(--secondary-brand-color);
+  }
+}

@@ -1,0 +1,32 @@
+.header-video iframe {
+  width: 100%;
+  min-height: 50vh;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  transition: all .3s linear;
+}
+
+.projects .project-item .img-container {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.projects .project-item .img-container img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

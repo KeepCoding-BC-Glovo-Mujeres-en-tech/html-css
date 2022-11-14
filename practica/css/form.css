@@ -1,0 +1,53 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-text-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.form-group .text-label {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.form-group .radio-group {
+  display: flex;
+  margin: 10px 0;
+}
+
+.form-group input,
+.form-container textarea {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px 0;
+  background-color: var(--main-brand-color);
+  transition: background-color .3s linear;
+}
+
+@media screen and (min-width: 768px) {
+  .input-text-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn:hover {
+    background-color: var(--main-brand-color-light);
+  }
+}

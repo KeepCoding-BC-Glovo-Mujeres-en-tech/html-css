@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-page h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.error-page .message {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}

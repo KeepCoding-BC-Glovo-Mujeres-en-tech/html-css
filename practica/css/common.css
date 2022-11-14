@@ -1,0 +1,33 @@
+:root {
+  /* definición variable */
+  --bg-color: #fff;
+  --main-brand-color: #F9B633;
+  --main-brand-color-light: #FFDE5B;
+  --secondary-brand-color: #D60021;
+  --secondary-brand-color-light: #DC2626;
+  --border-color: #000;
+  --main-text-color: #000;
+  --secondary-bg-light-color: #6B7280;
+  --main-text-hover-color: #4B5563;
+  --secondary-text-color: #FFF;
+  --main-font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+textarea::placeholder {
+  font-family: var(--main-font-family);
+}
+input::placeholder {
+  font-family: var(--main-font-family);
+}
+
+.main-bg {
+  background-color: var(--main-brand-color-light);
+  color: var(--main-text-color);
+}
+
+.main-content, .form-container {
+  width: 90%;
+  margin: 40px auto;
+  max-width: 920px;
+}
